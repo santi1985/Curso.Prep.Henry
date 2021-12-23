@@ -1,0 +1,18 @@
+Mi explicación como si fuera para un niño de 12 años:
+
+Variables
+
+En ellas podemos guardar información para luego usarla cuando la necesitemos.
+
+Strings
+
+Son grupos de caracteres. Los caracteres pueden ser letras, números, símbolos, etc.
+
+Funciones, argumentos, return
+
+Las funciones realizan una determinada tarea usando variables que le damos. Esas variables se llaman argumentos. Ellas mediante la palabra return; nos envían mas tarde la tarea realizada.
+
+If, true, false
+
+El if es una condición. En otras palabras simples es decir que preguntamos: si sucede tal cosa, se hace esto. Como respuesta a estas preguntas podemos obtener true (que significa verdadero) y false (que significa falso)
+

@@ -1,0 +1,15 @@
+  &&
+
+ Es una herramienta que funciona solo si todas las condiciones se dan. No vale si se dan la mayoría; tienen que ser todas.
+
+  ||
+
+ Es una herramienta que funciona si al menos una de las condiciones de da. Si se da mas de una condición o incluso todas, el resultado será el mismo.
+
+  !
+
+ Esta herramienta solo nos dice el opuesto de una cosa. Por ejemplo si decimos !VERDADERO en realidad estamos diciendo falso
+
+ FOR
+
+ En este caso repetiremos una tarea varias veces. En cada una de estas veces también pondremos una condición. Cuando esta condición no se de; dejaremos de hacer la tarea del comienzo. 
