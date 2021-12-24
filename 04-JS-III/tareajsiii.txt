@@ -1,0 +1,3 @@
+Arrays
+
+Los arrays también se usan para almacenar datos, pero nos permiten agruparlos para luego acceder a ellos mediante un index. También podemos agregar, borrar o manipular la información dentro de un array.
