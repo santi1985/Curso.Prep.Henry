@@ -1,0 +1,20 @@
+Objetos:
+
+En ellos se puede almacenar cualquier tipo de valor; (strings, números, variables, funciones, arrays y hasta objetos) a los que podremos acceder mediante una clave (key).
+
+Propiedades:
+
+Cada propiedad se refiere a una relación clave-valor.
+
+Métodos:
+
+Es el nombre que reciben las funciones dentro de un objeto
+
+Bucle for...in:
+
+Sirve para recorrer las claves de un objetp
+
+Notación de puntos vs notacion de corchetes:
+
+Son las dos formas para llamar a los valores de los objetos. Los corchetes usualmente se usan para las variables.
+
