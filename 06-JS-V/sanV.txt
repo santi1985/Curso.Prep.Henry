@@ -1,0 +1,9 @@
+Constructores
+
+Son clases; se usan como una plantilla prestablecida que luego contendrá objetos y metodos que estos podran usar.
+
+Prototype
+
+Se usa para crear metodos en las clases; de modo que todos los objetos contenidos en ellas, puedan utilizarlos.
+
+ 
