@@ -1,0 +1,3 @@
+Funciones callback
+
+Consiste en usar una función dentro de otra función. Es decir colocando una de ellas en los argumentos de otra.
