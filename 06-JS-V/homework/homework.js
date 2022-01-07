@@ -91,7 +91,7 @@ var nvapers=new Persona(nombre, apellido, edad, dir);
 nvapers.nombre='Juan';
 nvapers.apellido='Perez';
 nvapers.edad=22;
-nvapers.dir='Saavedra 123';
+nvapers.DUDAAAdomicilioporqueacanomedaerror='Saavedra 123';
 
 return nvapers;
 }
@@ -101,8 +101,8 @@ function agregarMetodo() {
   //Ej: "Juan, 22 años"
 
 Persona.prototype.datos=function(){
-return this.nombre + ', '+ this.edad+' años';
-  }
+  return this.nombre+', '+this.edad+' años';
+}
 }
   
 

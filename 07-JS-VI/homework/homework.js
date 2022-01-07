@@ -5,9 +5,7 @@ function mayuscula(nombre) {
   //ej: Recibe "mario" ----> Devuelve "Mario"
   //Tu código:
                 
-      nombre=nombre[0].toUpperCase()+nombre.slice(1);
-        return nombre;
-
+   return  nombre[0].toUpperCase()+nombre.slice(1); 
 }
 
 
@@ -15,15 +13,15 @@ function mayuscula(nombre) {
 function invocarCallback(cb) {
   // Invoca al callback `cb`
   //Tu código:
-
-   cb(); 
+ cb();
+  
 }
 
 function operacionMatematica(n1, n2, cb) {
   //Vamos a recibir una función que realiza una operación matemática como callback junto con dos números.
   //Devolver el callback pasándole como argumentos los números recibidos.
   //Tu código:
-  return cb(n1, n2);
+ return cb(n1, n2);
 }
 
 function sumarArray(numeros, cb) {
@@ -32,11 +30,11 @@ function sumarArray(numeros, cb) {
   // No es necesario devolver nada
   //Tu código:
 
+ cb (numeros.reduce(function(acc, ele){
+  return acc+ele;
+ }))
 
-var algui = numeros.reduce (function (acu, nus){
-  return acu + nus;
-}, 0);
-cb (algui);
+
 }
 
 function forEach(array, cb) {
@@ -44,9 +42,8 @@ function forEach(array, cb) {
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
 
-array.forEach(function(elem, indi){
-
-cb(elem);
+array.forEach(function(element){
+  cb(element);
 });
 }
 
@@ -56,11 +53,12 @@ function map(array, cb) {
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
 
-var arr=[];
-array.map(function(eleme, indic){
-  arr[indic]=cb(eleme);  
-  });
-  return arr;
+arre=[];
+array.map(function(eleme, ind){
+  arre[ind]=cb(eleme);
+  return eleme; 
+});
+return arre;
 }
 
 function filter(array) {
@@ -68,13 +66,13 @@ function filter(array) {
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
 
-ashe=[];
-array.map(function(ele, ind){
-if(ele[0]==='a'){
-ashe.push(ele);
+  nvoar=[];
+  array.forEach(function(eleme, indic){
+    if(eleme[0]==='a'){
+      nvoar.push(eleme);
     }
   });
-return ashe;
+  return nvoar;
 }
 
 // No modificar nada debajo de esta línea

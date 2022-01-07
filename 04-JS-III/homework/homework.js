@@ -27,8 +27,8 @@ function incrementarPorUno(array) {
   // y devuelve el array
   // Tu código:
 
-  for (let i=0; i<(array.length); i++) {
-    array[i]= array[i]+1;
+  for (var i=0; i<=array.length-1; i++){
+  array[i]=array[i]+1;
   }
   return array;
 }
@@ -129,17 +129,18 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-
-if (arguments.length<1){
-  return 0; 
+var mul=1;
+if (arguments.length===0){
+  return 0;
   }
-
-  var prod=1;
-  for(let i=0; i<arguments.length; i++){
-    prod = prod * arguments[i]; 
+  else if(arguments.length===1){
+    return arguments[0];
   }
-  return prod;
+  for(var i=0; i<=arguments.length-1; i++){
+mul=mul*arguments[i];
+  }  
 
+return mul;
 }
 
 
@@ -204,18 +205,17 @@ function mesesDelAño(array) {
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
-
-  const perd=[];  
-  for (let i=0; i<array.length; i++){
-    if (array[i]==='Enero' || array[i]==='Marzo' || array[i]==='Noviembre'){
-      perd.push(array[i]);
+var nvoarr=[];
+for(var i=0; i<array.length; i++){
+  if(array[i]==='Enero' || array[i]==='Marzo' || array[i]==='Noviembre'){
+    nvoarr.push(array[i]);
     }  
   }
-  if (perd.length<3){
-    return 'No se encontraron los meses pedidos';
-  }
-    return perd;  
-  }  
+    if(nvoarr.length<3){
+      return "No se encontraron los meses pedidos";
+    }
+  return nvoarr;
+}  
 
 
 function mayorACien(array) {
@@ -241,18 +241,18 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-var nu=numero;
-const dev=[];
-  for (let i=0; i<10; i++){
-    
-    if (i===nu){
-      return "Se interrumpió la ejecución";
-      break;
-    }
-    nu=nu+2;
-    dev.push(nu);
-  }
-  return dev;
+var dev=[];
+
+for (var i=0; i<10; i++){
+  if(numero===i){
+    return "Se interrumpió la ejecución";
+    break;
+  }  
+  numero=numero+2;
+    dev.push(numero);
+     
+}
+return dev;
 }
 
 
